@@ -4,6 +4,14 @@ body {
   color: #fff;
 }
 
+nav {
+  background-color: #270f2e;
+}
+
+div, img {
+  border-radius: 8px;
+}
+
 #my-works {
   background-color: #441c50;
   .image-top {
@@ -20,6 +28,10 @@ body {
   color: #373a3c;
 }
 
+.m-bottom-5rem {
+  margin-bottom: 5rem;
+}
+
 .brand-icon {
   max-width: 50px;
 }
@@ -31,5 +43,21 @@ body {
 
   .navbar-brand {
     width: 100px;
+  }
+
+  body {
+    text-align: center;
+  }
+  header, .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  #about-me {
+    margin: 0px !important;
+    max-width: 100%;
   }
 }
