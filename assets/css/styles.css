@@ -79,15 +79,11 @@ a {
   max-width: 50px;
 }
 
+.profile-img {
+  max-width: 30%;
+}
+
 @media (max-width: 768px) {
-  #contact form label {
-    font-weight: 400;
-  }
-
-  .navbar-brand {
-    width: 100px;
-  }
-
   body {
     text-align: center;
   }
@@ -100,8 +96,26 @@ a {
     text-align: center;
   }
 
+  #contact form label {
+    font-weight: 400;
+  }
+
   #about-me {
     margin: 0px !important;
     max-width: 100%;
+  }
+
+  #my-works {
+    padding: 10px !important;
+  }
+
+  .navbar-brand {
+    width: 100px;
+  }
+
+  .self-description {
+    p {
+      max-width: 100%;
+    }
   }
 }
