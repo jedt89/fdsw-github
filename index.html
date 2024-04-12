@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,7 +24,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
@@ -49,10 +49,10 @@
               <a class="nav-link" href="#about-me">Acerca de mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trabajos</a>
+              <a class="nav-link" href="#my-works">Trabajos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
+              <a class="nav-link" href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
@@ -60,11 +60,17 @@
     </nav>
 
     <header id="header-section" class="text-light text-end py-5 mt-5">
-      <div class="container d-flex justify-content-between align-items-center header-content">
-        <div style="max-width: 50%;">
-          <img class="img-fluid" src="./assets/img/profile_photo.jpg" alt="Foto de perfil">
+      <div
+        class="container d-flex justify-content-between align-items-center header-content"
+      >
+        <div class="max-width-100percent">
+          <img
+            class="img-fluid"
+            src="./assets/img/profile_photo.jpg"
+            alt="Foto de perfil"
+          />
         </div>
-        <div id="about-me" style="max-width: 50%;" class="ms-auto col-12 col-md-7">
+        <div id="about-me" class="ms-auto col-12 col-md-7 max-width-100percent">
           <h1 class="display-1 fw-bold my-5">Desarrollador Front End</h1>
           <p class="my-5">
             Desarrollador Front-End , autodidacta, apasionado y proactivo,
@@ -75,60 +81,60 @@
           </p>
           <div class="mb-5 pb-5">
             <button class="btn btn-lg btn-outline-info text-light me-4">
-              Trabajos
+              <a href="#my-works">Trabajos</a>
             </button>
-            <button class="btn btn-lg btn-info text-light">contact</button>
+            <button class="btn btn-lg btn-info text-light">
+              <a href="#contact">Contacto</a>
+            </button>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="container text-center my-5">
-      <h2 class="display-3 fw-bold my-4">Acerca de mi</h2>
-
-      <p class="m-bottom-5rem">
+    <section
+      class="container d-flex flex-column align-items-center text-center my-5 self-description"
+    >
+      <h2 class="display-3 fw-bold my-4">Acerca de mí</h2>
+      <p class="m-bottom-5rem max-width-50percent text-center">
         Desarrollador Front-End , Android y actor, autodidacta, apasionado y
         proactivo, manejo diferentes tipos de herramientas, tanto en el ámbito
         tecnológico (diseño gráfico y programación), como en el comunicacional
         (relatoría, capacitación), enfocado al arte, la creatividad y el
         desarrollo de habilidades interpersonales.
       </p>
-
       <div class="row">
         <div class="col-12 col-md-4">
-          <i class="fs-1 fas fa-code"></i>
+          <i class="self-description-icon color-blue fas fa-code"></i>
           <h3 class="my-3 fw-bold">Desarrollo FrontEnd</h3>
           <p class="my-3">
             Desarrollo e implementación de sitios web a nivel empresa, y
             productos. Aplicaciones web utilizando HTML - CSS - JS - REACTJS -
-            AngularJS
+            AngularJS.
           </p>
         </div>
         <div class="col-12 col-md-4">
-          <i class="fs-1 fab fa-android"></i>
+          <i class="self-description-icon color-green fab fa-android"></i>
           <h3 class="my-3 fw-bold">Desarrollo Android</h3>
           <p class="my-3">
             Desarrollo e implementación de aplicaciones Android a nivel empresa,
             y productos. Aplicaciones Mobile utilizando JAVA - KOTLIN - RETROFIT
-            - SQL
+            - SQL.
           </p>
         </div>
         <div class="col-12 col-md-4">
-          <i class="fs-1 fas fa-paint-brush"></i>
+          <i class="self-description-icon color-orange fas fa-paint-brush"></i>
           <h3 class="my-3 fw-bold">Diseño gráfico</h3>
           <p class="my-3">
             Diseño gráfico de brands y afiches para productoras artísticas
-            utilizando Photoshop & Illustrator
+            utilizando Photoshop & Illustrator.
           </p>
         </div>
       </div>
     </section>
-
     <section id="my-works" class="my-5 p-5">
       <h2 class="display-4 fw-bold text-center text-light mb-3">
         Mis trabajos
       </h2>
-
       <div class="row">
         <div class="col-12 col-sm-4 py-2">
           <div class="card">
@@ -141,7 +147,7 @@
               <p class="card-text">
                 Desarrollo e implementación de sitios web a nivel empresa, y
                 productos. Aplicaciones web utilizando HTML - CSS - JS - REACTJS
-                - AngularJS
+                - AngularJS.
               </p>
               <button type="button" class="btn btn-outline-info">
                 Ver más
@@ -158,8 +164,8 @@
             <div class="card-body">
               <h5 class="card-title fw-bold">App android</h5>
               <p class="card-text">
-                Desarrollo de aplicaciones Android. Aplicaciones Mobile utilizando JAVA -
-                KOTLIN - RETROFIT - SQL
+                Desarrollo de aplicaciones Android. Aplicaciones Mobile
+                utilizando JAVA - KOTLIN - RETROFIT - SQL.
               </p>
               <button type="button" class="btn btn-outline-info">
                 Ver más
@@ -187,26 +193,21 @@
         </div>
       </div>
     </section>
-
     <section id="contact" class="container my-5">
       <h2 class="display-4 fw-bold text-center my-4">Contáctame</h2>
-
       <p class="text-center my-4 d-none d-md-block">
         Si te gustaría que en un futuro podamos trabajar juntos en algún
         proyecto, contáctame.
       </p>
-
       <form>
         <div class="form-group mb-4">
           <label class="mb-2 text-white">Nombre</label>
           <input class="form-control" placeholder="Nombre" />
         </div>
-
         <div class="form-group mb-4">
           <label class="mb-2 text-white">Correo electrónico</label>
           <input class="form-control" placeholder="Correo electrónico" />
         </div>
-
         <div class="form-group">
           <label class="mb-2 text-white">Mensaje</label>
           <textarea
@@ -214,16 +215,14 @@
             placeholder="Escribe aquí tu mensaje"
           ></textarea>
         </div>
-
         <div class="my-3 text-end">
           <button class="btn btn-info text-light">Enviar</button>
         </div>
       </form>
     </section>
-
-    <footer class="bg-dark text-center text-light p-4">
-      <p class="mb-0">Jonathan Díaz - 2024.</p>
-      <p>Todos los derechos reservados.</p>
+    <footer id="contact" class="bg-dark text-center text-light p-4">
+      <p class="mb-0">Jonathan Díaz - 2024</p>
+      <p>Todos los derechos reservados</p>
     </footer>
 
     <script

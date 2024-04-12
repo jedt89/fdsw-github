@@ -1,0 +1,107 @@
+/* Global */
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #270f2e;
+  color: #fff;
+}
+
+nav {
+  background-color: #270f2e;
+}
+
+div,
+img {
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Utils */
+.m-bottom-5rem {
+  margin-bottom: 5rem;
+}
+
+.max-width-100percent {
+  max-width: 100%;
+}
+
+.max-width-50percent {
+  max-width: 50%;
+}
+
+.color-green {
+  color: greenyellow;
+}
+
+.color-blue {
+  color: dodgerblue;
+}
+
+.color-orange {
+  color: darkorange;
+}
+
+/* Elements */
+#my-works {
+  background-color: #441c50;
+  .image-top {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  color: #441c50;
+}
+
+#contact form label {
+  font-weight: 700;
+  color: #373a3c;
+}
+
+.self-description {
+  background-color: darkslateblue;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+
+.self-description-icon {
+  font-size: 50px;
+}
+
+.brand-icon {
+  max-width: 50px;
+}
+
+@media (max-width: 768px) {
+  #contact form label {
+    font-weight: 400;
+  }
+
+  .navbar-brand {
+    width: 100px;
+  }
+
+  body {
+    text-align: center;
+  }
+  header,
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  #about-me {
+    margin: 0px !important;
+    max-width: 100%;
+  }
+}
